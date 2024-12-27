@@ -16,7 +16,7 @@ public class ExternalWeatherClient {
 
     private final WebClient webClient = WebClient.create();
     private static final String API_URL = "http://api.openweathermap.org/data/2.5/weather";
-    private static final String API_KEY = "67223e54010e41da129f286215d65e4b";
+    private static final String API_KEY = "your_api_key";
 
     @Async
     public CompletableFuture<List<WeatherData>> fetchWeatherData(String city) {
